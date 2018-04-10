@@ -72,6 +72,14 @@ telnet mailc10.heig-vd.ch 25
   - HELO est une ancienne version
   - Ca nous donne les commandes disponnible sur le serveur
 
+- En cas de demande de login, il faut donner le nom d'utilisateur et le mdp en **base 64** (https://www.base64encode.org/)
+
+  - En ligne de commande (Linux)
+
+    ```bash
+    echo -n '<motAEncoder>' | base64
+    ```
+
 ## OpenSSL
 
 Possible de le faire avec Open SSL:
@@ -80,5 +88,6 @@ Possible de le faire avec Open SSL:
 openssl s_client -starttls smtp -crlf -connect  mailcl0.heig-vd.ch:25
 ```
 
+## Mail testing
 
-
+https://mailtrap.io/
