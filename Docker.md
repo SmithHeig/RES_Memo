@@ -77,13 +77,9 @@
     docker run -p 1313:1313 labo2-server-java 1313
     ```
 
-    ou "1313" est l'argument passé au jar. Ceci n'est pas possible avec *CMD*
+    ou "1313" est l'argument passé au jar. Ceci n'est pas possible avec *CMD
 
-<<<<<<< HEAD
-- **2 - Build l'image (depuis dosser ou il y a le Dockerfile):**
-=======
-- **Build l'image (depuis le dossier contenant le Dockerfile):**
->>>>>>> ce37ebee374fcefd384bd59c081cd6a75e7ca766
+- **2 - Build l'image (depuis le dossier contenant le Dockerfile):**
 
   ```bash
   docker build -t labo2-server-java .
@@ -107,7 +103,7 @@
 
   - *-p* : pour spécifier les ports (`port-machine-local:port-container`)
     - `port-machine-local` permet de se connecter depuis l'extérieur.
-    -  `port-container` est le port sur lequel le processus du container écoute.
+    - `port-container` est le port sur lequel le processus du container écoute.
       - On peut par exemple avoir plusieurs instances d'un serveur qui écoutent sur le même port mais qui doivent avoir un *port machine* différent pour les différencier et se connecter à chacun.
   - *-d*: permet de faire run en arrière-plan (utile pour des scripts)
   - *--rm* permet de supprimer l'image à son arrêt. 
