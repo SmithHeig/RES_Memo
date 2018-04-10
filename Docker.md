@@ -7,6 +7,15 @@
 
 ## Init
 
+- Pour éviter de devoir lancer les commandes docker en sudo suivre le tuto ici:
+  https://docs.docker.com/install/linux/linux-postinstall/
+
+  ``` bash
+  sudo groupadd docker
+  sudo usermod -aG docker $USER
+  ```
+
+
 - Créer un dossier à la racine du projet (mais peut être créé n'importe ou, il faut juste le retrouver facilement)
 
   - Où il y aura le fichier *Dockerfile* et le dossier *src* ou il y a le *.jar* (ou les exécutables que docker devra lancer) - Ceci est juste une bonne pratique qui facilite les prochaines opérations.
