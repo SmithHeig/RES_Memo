@@ -2,7 +2,7 @@
 
 ## Mise en situation
 
-- Mise en place de Docker pour le labo3 RES 2018
+- Mise en place de Docker pour le labo2 RES 2018
 - Réalisé depuis une machine Linux
 
 ## Init
@@ -79,7 +79,7 @@
 
     ou "1313" est l'argument passé au jar. Ceci n'est pas possible avec *CMD*
 
-- **Build l'image (depuis dosser ou il y a le Dockerfile):**
+- **2 - Build l'image (depuis dosser ou il y a le Dockerfile):**
 
   ```bash
   docker build -t labo2-server-java .
@@ -95,7 +95,7 @@
   docker images
   ```
 
-- **Run l'image**
+- **3 -Run l'image**
 
   ```bash
   docker run -p 1313:1313 labo2-server-java
