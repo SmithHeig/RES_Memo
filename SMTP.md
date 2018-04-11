@@ -46,7 +46,7 @@ MX (Mail eXange) sont les serveurs SMTP.
 On peut ensuite discuter avec le serveur avec telnet
 
 ```bash
-telnet mailc10.heig-vd.ch 25
+telnet mailcl0.heig-vd.ch 25
 > EHLO local
 250-mailcl0.heig-vd.ch Hello james-pc.einet.ad.eivd.ch [10.192.115.77]
 250-SIZE 20480000
@@ -55,12 +55,12 @@ telnet mailc10.heig-vd.ch 25
 250-AUTH PLAIN LOGIN
 250-STARTTLS
 250 HELP
-> MAIL FROM: <james.smith@heig-vd.ch>
-> RECPT TO: <jeremie.chatillon@heig-vd.ch>
+> MAIL FROM:<james.smith@heig-vd.ch>
+> RCPT TO:<jeremie.chatillon@heig-vd.ch>
 > DATA
-> From: bill.gates@msft.com
-  To: olivier.liechti@heig-vd.ch
-  Subject: Hi!
+> From:bill.gates@msft.com
+  To:olivier.liechti@heig-vd.ch
+  Subject:Hi!
   
   Hello buddy,
   Give me your money
